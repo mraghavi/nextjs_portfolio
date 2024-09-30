@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 export default function Home() {
   const [showResume, setShowResume] = useState(false);
-  const resumeUrl = 'https://drive.google.com/file/d/1cPESynZUuxnnqhqQh62rWmd9XUh3woAX/preview';
-  const downloadUrl = 'https://drive.google.com/uc?export=download&id=1cPESynZUuxnnqhqQh62rWmd9XUh3woAX';
+  const resumeUrl = 'https://drive.google.com/file/d/1WnQMkJVcbvMmJETJPzl3outFF2L5ev_4/preview';
+  const downloadUrl = 'https://drive.google.com/uc?export=download&id=1WnQMkJVcbvMmJETJPzl3outFF2L5ev_4';
 
   const toggleResumeView = () => {
     setShowResume(!showResume);
