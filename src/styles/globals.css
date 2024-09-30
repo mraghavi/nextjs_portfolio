@@ -1,0 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply bg-light-bg text-light-text transition-colors duration-300 font-sans;
+    background-image: 
+      radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0, transparent 50%),
+      radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.1) 0, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  body.dark {
+    @apply bg-dark-bg text-dark-text;
+    background-image: 
+      radial-gradient(at 100% 100%, rgba(96, 165, 250, 0.1) 0, transparent 50%),
+      radial-gradient(at 0% 0%, rgba(52, 211, 153, 0.1) 0, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold font-serif text-light-primary dark:text-dark-primary;
+}
+
+a {
+  @apply transition-colors duration-200 text-light-secondary dark:text-dark-secondary hover:opacity-80;
+}
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md font-sans font-semibold transition-all duration-200 shadow-custom hover:shadow-custom-hover transform hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply bg-light-primary text-white hover:bg-opacity-90 dark:bg-dark-primary dark:text-dark-bg dark:hover:bg-opacity-90;
+}
+
+.btn-secondary {
+  @apply bg-light-secondary text-white hover:bg-opacity-90 dark:bg-dark-secondary dark:text-dark-bg dark:hover:bg-opacity-90;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this new class for card styling */
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-custom hover:shadow-custom-hover transition-all duration-300 overflow-hidden;
+}
