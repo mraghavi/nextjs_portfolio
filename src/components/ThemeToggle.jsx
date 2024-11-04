@@ -12,7 +12,9 @@ export default function ThemeToggle({ theme, toggleTheme }) {
   return (
     <button
       onClick={toggleTheme}
-      className="w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-600 relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-primary dark:focus:ring-dark-primary"
+      className={`w-12 h-6 rounded-full relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        theme === 'dark' ? 'bg-gray-600 focus:ring-dark-primary' : 'bg-gray-300 focus:ring-light-primary'
+      }`}
       aria-label="Toggle dark mode"
     >
       <div

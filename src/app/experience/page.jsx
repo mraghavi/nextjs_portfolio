@@ -33,10 +33,10 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-4 border-[#000000] border-opacity-70 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <h2 className="text-2xl font-bold mb-2 text-light-primary dark:text-dark-primary">{exp.title}</h2>
-            <h3 className="text-xl mb-2 text-light-secondary dark:text-dark-secondary">{exp.company}, {exp.location}</h3>
+            <h2 className="text-2xl font-semibold mb-2 text-light-primary dark:text-dark-primary">{exp.title}</h2>
+            <h3 className="text-xl mb-1 font-medium text-light-secondary dark:text-dark-secondary">{exp.company}, {exp.location}</h3>
             <p className="text-sm mb-4 text-gray-600 dark:text-gray-400">{exp.period}</p>
             <ul className="list-disc list-inside space-y-2 mb-4">
               {exp.responsibilities.map((resp, respIndex) => (
@@ -48,7 +48,7 @@ export default function Experience() {
                 href={exp.certificateLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-light-primary dark:bg-dark-primary text-white dark:text-black px-4 py-2 rounded-md hover:opacity-80 transition-opacity duration-300 text-base font-semibold"
+                className="inline-block bg-light-primary dark:bg-dark-primary text-white dark:text-black px-4 py-2 rounded-md hover:bg-light-primary/80 dark:hover:bg-dark-primary/80 transition-opacity duration-300 text-base font-semibold"
               >
                 View Certificate
               </Link>

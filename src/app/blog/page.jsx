@@ -6,7 +6,7 @@ export default function Blog() {
           Blogs Coming Soon!
         </p>
         <p className="mt-4 text-light-secondary dark:text-dark-secondary">
-          Stay tuned for exciting articles about web development, technology trends, and my journey as a developer.
+          Stay tuned for my journey as a developer.
         </p>
       </div>
     </div>

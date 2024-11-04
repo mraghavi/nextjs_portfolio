@@ -4,24 +4,27 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/styles/**/*.{css}", // Ensure styles are included
   ],
-  darkMode: 'class', // Add this line
+  darkMode: 'class', // Enable dark mode
   theme: {
     extend: {
       colors: {
+        // Light mode colors
         light: {
-          bg: '#F8FAFC',
-          text: '#334155',
-          primary: '#3B82F6',
-          secondary: '#10B981',
-          accent: '#8B5CF6',
+          bg: '#ffffff', // Pure white
+          text: '#000000', // Black
+          primary: '#9b5de5', // Light purple
+          secondary: '#f15bb5', // Light pink
+          accent: '#00bbf9', // Light coral
         },
+        // Dark mode colors
         dark: {
-          bg: '#0F172A',
-          text: '#E2E8F0',
-          primary: '#60A5FA',
-          secondary: '#34D399',
-          accent: '#A78BFA',
+          bg: '#0c1208', // Dark green
+          text: '#fafbf4', // Light cream
+          textMuted: '#737b81', // Muted text for less prominence
+          primary: '#bdb2ff', // Gray
+          secondary: '#899f7a', // Dark olive green
         },
       },
       fontFamily: {
@@ -29,7 +32,7 @@ module.exports = {
         serif: ['Merriweather', 'serif'],
       },
       boxShadow: {
-        'custom': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
         'custom-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       },
     },

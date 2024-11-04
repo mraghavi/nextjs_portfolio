@@ -31,12 +31,24 @@ const projects = [
     title: "Portfolio Website (Next.js)",
     description: (
       <>
-        I built my personal portfolio using <Highlight>Next.js</Highlight> to showcase my skills, projects, and blog content. The site is optimized with <Highlight>server-side rendering (SSR)</Highlight> for fast load times and features a <Highlight>responsive design</Highlight> for seamless viewing across devices. This project demonstrates my proficiency in <Highlight>modern React development</Highlight> and Next.js framework.
+        I created my portfolio using <Highlight>Next.js</Highlight> to showcase my skills, projects, and blog content. With <Highlight>server-side rendering (SSR)</Highlight>, the site delivers fast load times, and the <Highlight>responsive design</Highlight> ensures it looks great on any device. This project highlights my expertise in <Highlight>React</Highlight> and the <Highlight>Next.js framework</Highlight>, and demonstrates my commitment to building polished, high-performance web experiences.
       </>
     ),
     techStack: ["Next.js", "React"],
     github: "https://github.com/mraghavi/nextjs_portfolio"
   }
+  ,
+  {
+    title: "AC Stores eCommerce App",
+    description: (
+      <>
+        Built a <Highlight>full-stack eCommerce app</Highlight> for seamless shopping using Kaggle’s Amazon Products dataset. Leveraged <Highlight>OpenSearch</Highlight> for fast product search and filtering, developed <Highlight>RESTful APIs</Highlight> with <Highlight>Node.js</Highlight> and <Highlight>Express.js</Highlight>, and managed data with <Highlight>MongoDB Atlas</Highlight>. Created a responsive <Highlight>React.js frontend</Highlight> with essential features like <Highlight>Add to Cart</Highlight> and user <Highlight>authentication</Highlight>.
+      </>
+    ),
+    techStack: ["Node.js", "Express.js", "MongoDB", "MongoDB Atlas", "React.js", "OpenSearch"],
+    github: "https://github.com/mraghavi/AC_store"
+  }
+  
 ];
 
 export default function Projects() {

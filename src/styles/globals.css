@@ -4,19 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-light-bg text-light-text transition-colors duration-300 font-sans;
-    background-image: 
-      radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0, transparent 50%),
-      radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.1) 0, transparent 50%);
-    background-attachment: fixed;
+    @apply bg-light-bg text-light-text transition-colors duration-300 font-sans; /* Set pure white background */
   }
 
   body.dark {
-    @apply bg-dark-bg text-dark-text;
-    background-image: 
-      radial-gradient(at 100% 100%, rgba(96, 165, 250, 0.1) 0, transparent 50%),
-      radial-gradient(at 0% 0%, rgba(52, 211, 153, 0.1) 0, transparent 50%);
-    background-attachment: fixed;
+    @apply bg-dark-bg text-dark-text; /* Set pure black background for dark mode */
   }
 }
 
@@ -41,16 +33,11 @@ a {
 }
 
 .btn-primary {
-  @apply bg-light-primary text-white hover:bg-opacity-90 dark:bg-dark-primary dark:text-dark-bg dark:hover:bg-opacity-90;
+  @apply bg-light-primary text-white hover:bg-opacity-90 dark:bg-dark-primary dark:text-black dark:hover:bg-opacity-90; /* Ensure text is visible */
 }
 
 .btn-secondary {
-  @apply bg-light-secondary text-white hover:bg-opacity-90 dark:bg-dark-secondary dark:text-dark-bg dark:hover:bg-opacity-90;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+  @apply bg-light-secondary text-white hover:bg-opacity-90 dark:bg-dark-secondary dark:text-black dark:hover:bg-opacity-90; /* Ensure text is visible */
 }
 
 /* Add this new class for card styling */

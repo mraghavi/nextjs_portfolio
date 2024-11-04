@@ -7,9 +7,7 @@ export default function RootLayout({ children }) {
   const [theme, setTheme] = useState('dark'); // Set initial state to 'dark'
 
   useEffect(() => {
-    // Remove the check for system preference and always default to 'dark'
     const savedTheme = localStorage.getItem('theme') || 'dark';
-    
     setTheme(savedTheme);
     document.documentElement.classList.toggle('dark', savedTheme === 'dark');
   }, []);
@@ -23,9 +21,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={theme}>
-      <body className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+      <body className={`min-h-screen flex flex-col bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text`}>
         <Navbar theme={theme} toggleTheme={toggleTheme} />
-        <main className="flex-grow pt-20 pb-8"> {/* Keep pt-20 to maintain space when navbar is hidden */}
+        <main className="flex-grow pt-20 pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </div>
